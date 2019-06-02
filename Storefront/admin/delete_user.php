@@ -19,13 +19,7 @@ if ( (isset($_GET['id'])) && (is_numeric($_GET['id'])) ) {
     echo '<h4 class="error text-center">Error: Unable to find user</h4>';
     exit;
 }
-?>
 
-<div class="page-header">
-    <h1><b>Delete user</b></h1>
-</div>
-
-<?php
 //Check if form has been submitted
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($_POST['sure'] == 'Yes') {
