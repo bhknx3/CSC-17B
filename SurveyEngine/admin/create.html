@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+    Form to create a survey
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create Survey</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <link href="/SurveyEngine/stylesheet.css" rel="stylesheet">
+    <script type="text/javascript" src="/SurveyEngine/scripts/create.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/SurveyEngine/home.php"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/SurveyEngine/admin/admin.php"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+                <li><a href="/SurveyEngine/logout.php"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="survey">
+        <h2 id="title" style="text-align:center;"><b>Create Survey</b></h2><br><br>
+
+        <div id="error"></div>
+
+        <b>Survey Title</b>
+        <input id="surveyTitle" type="text" placeholder="Title goes here"><br><br>
+        <b>Survey Description</b>
+        <textarea rows="3" id="surveyDesc" placeholder="Description goes here"></textarea>
+
+        <hr>
+
+        <div class="questions" id="qstn1">
+            <p class="txt">Question 1</p>
+            <input class="txtInput" id="qCtnt" type="text" placeholder="Question">
+            
+            <hr>
+            
+            <p class="txt">Answers</p>
+            <div id="answers">
+                <input class="txtInput" id="ans1" type="text" placeholder="Answer 1">
+                <input class="txtInput" id="ans2" type="text" placeholder="Answer 2">
+            </div>
+            <div class="ansBtns">
+                <button id="addBtn" class="add" onclick="addAns(1)">Add Answer</button>
+                <button id="delBtn" class="add" onclick="delAns(1)">Delete Answer</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="botBtns">
+        <div class="qstnBtns">
+            <button id="addQBtn" onclick="addQstn()">Add Question</button>
+            <button id="delQBtn" onclick="delQstn()">Delete Question</button>
+        </div>
+
+        <div class="createBtn">
+            <button id="createBtn" onclick="create()">Create Survey</button>
+        </div>
+    </div>
+</body>
+</html>

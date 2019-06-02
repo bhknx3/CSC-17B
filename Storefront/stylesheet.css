@@ -1,0 +1,283 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#title {
+    margin: auto;
+}
+
+input[type=number] {
+    text-align: center;
+}
+
+input[type=text], input[type=password], input[type=box], textarea, select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.container-fluid {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#error {
+    color: red;
+    border-style: solid;
+    display: none;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.settings {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.text-center {
+    margin-top: 5%;
+    padding-bottom: 1%;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    text-align: center;
+    height: 50px;
+}
+
+tr:nth-child(even) {background-color: #F8F8F8;}
+
+#accountForm {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    max-width: 500px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.tcenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.form {
+    display: block;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.page-header {
+    text-align: center;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+ul.pagination {
+    display: table;
+    margin: 0 auto;
+}
+
+div.catalog {
+    position: absolute;
+    margin: auto;
+}
+
+.navbar-default {
+   background-color: white;
+
+}
+
+.panel-footer {
+    background-color: white;
+}
+
+.item {
+    color: black;
+}
+
+.product_container {
+    padding: 15px;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 15px;
+    max-width: 450px;
+}
+
+/* Product pages */
+.left-column {
+    width: 65%;
+    position: relative;
+}
+ 
+.right-column {
+    width: 35%;
+    margin-top: 60px;
+}
+
+.left-column img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    padding-bottom:20px;
+    margin-bottom: 20px;
+}
+
+.size-choose {
+    margin-bottom: 20px;
+}
+
+.size-choose button {
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.size-choose button:hover, .size-choose button:active, .size-choose button:focus, button.active {
+    border: 2px solid #86939E;
+    outline: none;
+}
+
+.product-size {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+}
+ 
+.product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+ 
+.cart-btn {
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 12px 30px;
+    transition: all .5s;
+    margin-top: 20px;
+}
+.cart-btn:hover {
+    background-color: #64af3d;
+}
+/* End of product pages */
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+.col-centered {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+panel {
+    color: #FFFFFF;
+}
+
+.footer {
+    padding: 1%;
+    margin-top: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+#error {
+    margin-top: 25px;
+    width: 250px;
+    text-align: center;
+}
+
+.badge {
+    position: absolute;
+    top: 5%;
+}
+
+.order {
+    border-style: solid;
+    border-width: thin;
+    max-width: 800px;
+    margin: 0 auto;
+}

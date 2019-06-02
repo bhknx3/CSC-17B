@@ -1,0 +1,200 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    padding-bottom: 100px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+#title {
+    margin: auto;
+}
+
+input[type=text], input[type=password], input[type=box], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+#botBtns {
+    position: relative;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 1000px;
+    padding: 50px;
+    text-align: center;
+}
+
+.submitBtns {
+    padding: 200px;
+}
+
+.createBtn {
+    padding-top: 5%;
+    margin: auto;
+    max-width: 600px;
+}
+
+#addQBtn {
+    max-width: 300px;
+    background-color: #63a2f8;
+    margin: auto;
+}
+
+#delQBtn {
+    max-width: 300px;
+    background-color: #fa647a;
+    margin: auto;
+}
+
+#addBtn  {
+    width: 100px;
+    background-color: #63a2f8;
+}
+
+#delBtn {
+    width: 100px;
+    background-color: #fa647a;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.container {
+    padding: 15px;
+    max-width: 450px;
+}
+
+.container2 {
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+#accountForm {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    max-width: 500px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.container-fluid {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#survey {
+    position: relative;
+    margin: 0 auto;
+    max-width: 50%;
+    padding: 50px;
+    border: 2px solid gray;
+    border-style: groove;
+    border-radius: 15px;
+}
+
+.questions {
+    border-style: groove;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 35px 35px;
+}
+
+#error {
+    color: red;
+    border-style: solid;
+    display: none;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.settings {
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.text-center {
+    margin-top: 5%;
+    padding-bottom: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th, td {
+    text-align: center;
+    height: 50px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+#reg {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    line-height: 5px;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+#radioDiv {
+    margin: 0 auto;
+    width: auto;
+    text-align: left;
+    display: table;
+}   
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.error {
+    color: red;
+}
+
+.page-header {
+    text-align: center;
+}
