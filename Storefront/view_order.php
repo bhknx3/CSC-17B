@@ -36,7 +36,7 @@ if ($numOrder > 0) {
                 <legend style="font-size: 1.2em";>
                     <p>Order Reference: #' . $row["order_id"] . '</p>
                     <p style="vertical-align:middle;">Date Processed: ' . $row["created_at"] . '</p>
-                    <p style="vertical-align:middle;">Order Total: $' . $row['order_total'] . '</p><br>
+                    <p style="vertical-align:middle;">Order Total: $' . number_format($row['order_total'], 2) . '</p><br>
                 </legend>
                 <p>Order Details:</p>
               </div>';
@@ -53,8 +53,8 @@ if ($numOrder > 0) {
             echo '<tr><td>' . $re['product_name'] . '</td>
                   <td>' . $re['size'] . '</td>
                   <td>' . $re['order_item_quantity'] . '</td>
-                  <td>' . $re['order_item_price'] . '</td>
-                  <td>' . $re['order_item_quantity'] * $re['order_item_price'] . '</td></tr>';
+                  <td>$' . number_format($re['order_item_price'], 2) . '</td>
+                  <td>$' . number_format($re['order_item_quantity'] * $re['order_item_price'], 2) . '</td></tr>';
         }
 
         echo'</table></fieldset></div><br>';  

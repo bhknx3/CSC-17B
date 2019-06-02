@@ -64,7 +64,7 @@ if (!empty($_SESSION['cart'])) {
                 <td><img height='100px;' width='300px;' src='./img/{$row['image']}'</td>
                 <td>{$row['product_name']}</td>
                 <td>{$row['size']}</td>
-                <td>\${$row['product_price']}</td>
+                <td>\$" . number_format($row['product_price'], 2) . "</td>
                 <td><input type='number' style='width:50px;' min='0' max='99' name='qty[{$row['variant_id']}]' value='{$_SESSION['cart'][$row['variant_id']]['quantity']}'/></td>
                 <td>$" . number_format ($subtotal, 2) . "</td>
                 <td><a href='view_cart.php?vid=" . $row['variant_id'] . "'>Remove</a></td>
@@ -83,7 +83,7 @@ if (!empty($_SESSION['cart'])) {
              <a href="checkout.php" class="cart-btn">Checkout</a></p>
           </div>';
           
-          $_SESSION['order_total'] = number_format($total, 2);
+          $_SESSION['order_total'] = $total;
 
 } else {    //Message if cart is empty
 	echo '<p class="text-center">Your cart is currently empty</p>';

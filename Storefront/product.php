@@ -84,7 +84,7 @@ else {
     <div class="right-column">
         <div class="product-description">
             <h2> <?php echo $row['product_name']; ?> </h2>
-            <h2> $<?php echo $row['product_price']; ?> </h2><br>
+            <h2> $<?php echo number_format($row['product_price'], 2); ?> </h2><br>
             <p> <?php echo $row['description']; ?> </p>
         </div>
         
