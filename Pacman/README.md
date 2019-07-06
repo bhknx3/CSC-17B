@@ -9,7 +9,7 @@ Features a login and user high score system.
 ## Screenshots
 ![Gameplay1](https://github.com/bhknx3/CSC-17B/blob/master/Pacman/img/screenshot1.png)
 
-![Gameplay2](https://github.com/bhknx3/CSC-17A/blob/master/Pacman/img/screenshot2.png)
+![Gameplay2](https://github.com/bhknx3/CSC-17B/blob/master/Pacman/img/screenshot2.png)
 
 ## Misc
 Contributions to project:

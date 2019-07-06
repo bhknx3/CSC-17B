@@ -33,4 +33,4 @@ View of a user's order history.
 
 ![Inventory Management](https://github.com/bhknx3/CSC-17B/blob/master/Storefront/screenshots/manager.png)
 
-An example of admin functionality: ability to manage inventory
+An example of admin functionality: ability to manage inventory.
