@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `storefront` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `storefront`;
 -- MySQL dump 10.16  Distrib 10.1.37-MariaDB, for Win32 (AMD64)
 --
 -- Host: 127.0.0.1    Database: storefront
@@ -26,7 +24,7 @@ DROP TABLE IF EXISTS `entity_order`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `entity_order` (
   `order_id` int(10) NOT NULL AUTO_INCREMENT,
-  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `order_total` decimal(50,2) NOT NULL,
   PRIMARY KEY (`order_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
@@ -139,7 +137,7 @@ CREATE TABLE `entity_user` (
   `password` varchar(255) NOT NULL,
   `first_name` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) DEFAULT NULL,
-  `registration_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `registration_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `role` int(1) NOT NULL,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;

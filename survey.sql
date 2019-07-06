@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `survey` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `survey`;
 -- MySQL dump 10.16  Distrib 10.1.37-MariaDB, for Win32 (AMD64)
 --
 -- Host: 127.0.0.1    Database: survey
@@ -103,7 +101,7 @@ CREATE TABLE `entity_user` (
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `type` int(1) DEFAULT NULL,
-  `registration_date` datetime DEFAULT CURRENT_TIMESTAMP,
+  `registration_date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
